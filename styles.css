@@ -385,6 +385,12 @@ footer i:hover {
   }
 }
 
+@media screen and (max-width: 768px) {
+  #copyright {
+    margin: 1.5rem auto;
+  }
+}
+
 @media screen and (max-width: 623px) {
   .contenido .row .col {
     max-height: none;
