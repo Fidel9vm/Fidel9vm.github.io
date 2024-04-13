@@ -368,7 +368,8 @@ footer i:hover {
   }
   #botones-musculos .btn,
   #botones-rutinas .btn {
-    font-size: 4vw;
+    font-size: 2rem;
+    margin: 3px;
     flex: auto;
   }
   #nutricion h2 {
