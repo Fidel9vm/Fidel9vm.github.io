@@ -179,6 +179,9 @@ td:nth-child(6) {
     margin: 0 auto; /* Centrar horizontalmente */
     padding: 0; /* Eliminar el relleno */
   }
+  .contenido .row .encabezado {
+    padding: 1rem;
+  }
 
   .contenido .table th,
   .contenido .table td {

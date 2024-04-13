@@ -130,3 +130,14 @@ p.matematicas {
 
   }
 }
+
+@media screen and (max-width: 650px) {
+  .contenido .row .col h1 i {
+    display: none;
+  }
+  .contenido .row .col h1 {
+    font-size: 5vb;
+    width: auto;
+  }
+
+}

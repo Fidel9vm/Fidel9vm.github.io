@@ -388,9 +388,6 @@ footer i:hover {
   .contenido .row .col {
     max-height: none;
   }
-  .contenido .row .col p{
-    margin: 0;
-  }
   #ejercicios h3 {
     padding-bottom: 20px;
   }
