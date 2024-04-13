@@ -264,6 +264,7 @@ nav .nav-link:hover {
 
 footer {
   background-color: #b800b8;
+  bottom: 0;
 }
 
 footer h4 {
