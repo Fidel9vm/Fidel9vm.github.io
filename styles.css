@@ -361,7 +361,6 @@ footer i:hover {
   .contenido .row .col {
     flex: auto;
     width: 100%;
-    margin: 0 auto;
   }
   #ejercicios h3 {
     padding-bottom: 40px;
@@ -386,11 +385,16 @@ footer i:hover {
 }
 
 @media screen and (max-width: 623px) {
+  .contenido .row .col {
+    max-height: none;
+  }
   #ejercicios h3 {
     padding-bottom: 20px;
   }
   #botones-musculos .btn,
   #botones-rutinas .btn {
-    font-size: 4vw;
+    font-size: 1rem;
+    margin: 3px 0;
   }
 }
+
