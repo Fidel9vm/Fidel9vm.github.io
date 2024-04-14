@@ -1,5 +1,5 @@
 function scrollDown() {
-  window.scrollBy(0, 760); // Desplaza la página hacia abajo 500 píxeles
+  window.scrollBy(0, 700); // Desplaza la página hacia abajo 500 píxeles
 }
 
 function copyText(event, text, icon) {

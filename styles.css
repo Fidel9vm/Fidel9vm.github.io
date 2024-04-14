@@ -48,6 +48,7 @@ h3 {
 
 .contenido .col {
   margin-right: 2rem; /* Ajusta el valor según sea necesario */
+  border: #b800b8;
 }
 
 /* Para evitar que el último elemento tenga margen derecho */
@@ -156,6 +157,7 @@ nav .nav-link:hover {
 
 .contenido .col {
   padding: 1.5rem;
+
 }
 
 #ejercicios,
@@ -166,6 +168,7 @@ nav .nav-link:hover {
 #grupo30 {
   background-color: white;
   border: 5px solid #b800b8;
+  border-radius: 10px;
 }
 
 .contenido h2 {
@@ -239,7 +242,7 @@ nav .nav-link:hover {
 }
 
 .respuestas .btn {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 1.2rem;
 }
 
@@ -258,12 +261,57 @@ nav .nav-link:hover {
   margin-top: 0.7rem;
 }
 
-/* Grupo 30 */
+/* Carousel */
+
+.row .carousel {
+  border: 5px solid #b800b8;
+  border-radius: 10px;
+  background-color: #3b0058;
+
+}
+
+.row .carousel .carousel-item{
+  position: relative;
+  background-color: #3b0058;
+}
+
+.row .carousel H2 {
+  color: white;
+  font-weight: bolder;
+  font-size: 3.5rem;
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 80%; /* Ajusta el ancho máximo según tus necesidades */
+  white-space: nowrap; /* Evita el salto de línea */
+  overflow: hidden; /* Oculta el texto que sobresale del ancho máximo */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto sobresale */
+}
+
+.row .carousel .btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.row .carousel img {
+  border-radius: 4rem;
+  justify-content: center;
+  padding: 2.5rem 0;
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.5);
+}
 
 /* Footer  */
 
 footer {
   background-color: #b800b8;
+
   bottom: 0;
 }
 
@@ -427,6 +475,14 @@ footer .bi-check-square:hover{
   #botones-rutinas .btn {
     font-size: 1rem;
     margin: 3px 0;
+  }
+
+  .row .carousel H2 {
+    font-size: 8vw;
+  }
+
+  .row .carousel img {
+    padding: 0;
   }
 }
 
