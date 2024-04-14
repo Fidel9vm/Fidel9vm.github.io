@@ -205,7 +205,6 @@ nav .nav-link:hover {
 }
 
 #botones-rutinas {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -410,10 +409,6 @@ footer .bi-check-square:hover{
   #ejercicios h3 {
     padding-bottom: 20px;
   }
-  #botones-rutinas {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
   #botones-musculos .btn {
     font-size: 2rem;
   }
@@ -443,6 +438,7 @@ footer .bi-check-square:hover{
     font-size: 2rem;
     margin: 3px;
     flex: auto;
+    flex-wrap: wrap;
   }
   #nutricion h2 {
     margin-bottom: 2rem;
@@ -473,7 +469,7 @@ footer .bi-check-square:hover{
   }
   #botones-musculos .btn,
   #botones-rutinas .btn {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 3px 0;
   }
 
