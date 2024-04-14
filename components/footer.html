@@ -1,23 +1,47 @@
 <div class="container-fluid pt-4 pb-3">
   <div class="row">
-    <div class="col-md-4 mt-3">
+    <div class="col-md-4 mt-3 contacto">
       <h4>Contacto</h4>
-      <hr>
-      <p>e-mail: fideljlopez9@gmail.com</p>
-      <p>Teléfono: +54 9 2657 30-4838</p>
+      <hr />
+      <p>
+        <span style="user-select: none">e-mail:</span>
+        <a
+          href="mailto:fideljlopez9@gmail.com"
+          style="color: black;"
+          id="mail"
+          >fideljlopez9@gmail.com</a
+        >
+        <a  onclick="copyText(event, 'fideljlopez9@gmail.com', this)"
+          ><i class="bi bi-copy"></i
+        ></a>
+      </p>
+      <p style="color: black">
+        <span style="user-select: none">Teléfono:</span>+54 9 2657 30-4838
+        <a onclick="copyText(event, '+54 9 2657 30-4838', this)"
+          ><i class="bi bi-copy"></i
+        ></a>
+      </p>
     </div>
     <div class="col-md-4" id="copyright">
       <h2>WikiFit.</h2>
       <img src="../../../img/logo.png" alt="Mancuerna" width="130px" />
-      <br>
+      <br />
       <span id="año">©2024</span>
     </div>
     <div class="col-md-4 mt-3">
-     <h4>Redes</h4>
-     <hr>
-     <a href="https://www.instagram.com/fiidel_09/" target="_blank"><i class="bi bi-instagram"></i></a>  
-     <a href="https://github.com/Fidel9vm" target="_blank"><i class="bi bi-github"></i></a>
-     <a href="https://www.linkedin.com/in/joaquin-fidel-lopez-1032ba255/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <h4>Redes</h4>
+      <hr />
+      <a href="https://www.instagram.com/fiidel_09/" target="_blank"
+        ><i class="bi bi-instagram"></i
+      ></a>
+      <a href="https://github.com/Fidel9vm" target="_blank"
+        ><i class="bi bi-github"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/joaquin-fidel-lopez-1032ba255/"
+        target="_blank"
+        ><i class="bi bi-linkedin"></i
+      ></a>
     </div>
   </div>
 </div>

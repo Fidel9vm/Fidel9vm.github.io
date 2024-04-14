@@ -277,9 +277,17 @@ footer p {
   color: #100018;
 }
 
-footer i {
+footer  i{
   color: #100018;
   font-size: 2.5rem;
+  padding: 0 .5rem;
+  transition: 700ms;
+  cursor: pointer;
+}
+
+footer .contacto i{
+  color: black;
+  font-size: 1rem;
   padding: 0 .5rem;
   transition: 700ms;
   cursor: pointer;
@@ -289,10 +297,26 @@ footer i:hover {
   color: white;
 }
 
+footer i.bi-check-square {
+  color: white;
+}
+
+footer .bi-check-square:hover{
+  color: black;
+}
+
 #año {
   padding-top: 3px;
   font-size: 1.5rem;
   user-select: none;
+}
+
+#mail {
+  text-decoration: none;
+}
+
+#mail:hover {
+  text-decoration: underline;
 }
 
 
