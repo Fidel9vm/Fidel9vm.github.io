@@ -13,12 +13,14 @@ body {
   margin: 0 auto;
 }
 
+.contenido,
 .info .contenido {
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin: 0 1rem;
+  margin: 0 auto;
   max-width: 1250px;
+  padding: 0 1rem;
 }
 
 p {
@@ -416,6 +418,11 @@ footer .bi-check-square:hover{
   #guia .mas .btn {
     margin-bottom: 1rem;
   }
+
+  #botones-rutinas {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -431,12 +438,10 @@ footer .bi-check-square:hover{
   #ejercicios h3 {
     padding-bottom: 40px;
   }
-  #botones-musculos .btn,
-  #botones-rutinas .btn {
-    font-size: 2rem;
+  #botones-musculos .btn{
+    font-size: 1.5rem;
     margin: 3px;
     flex: auto;
-    flex-wrap: wrap;
   }
   #nutricion h2 {
     margin-bottom: 2rem;
@@ -449,6 +454,15 @@ footer .bi-check-square:hover{
   }
   #nutricion .mas .btn {
     margin-top: 2rem;
+  }
+
+  #botones-rutinas {
+    padding: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -492,3 +506,4 @@ footer .bi-check-square:hover{
     margin: 0;
   }
 }
+
