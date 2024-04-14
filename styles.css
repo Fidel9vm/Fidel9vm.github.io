@@ -13,15 +13,7 @@ body {
   margin: 0 auto;
 }
 
-.contenido,
-.info .contenido {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 1250px;
-  padding: 0 1rem;
-}
+
 
 p {
   font-size: 20px;
@@ -135,6 +127,16 @@ nav .nav-link:hover {
 
 /* Info */
 
+.contenido,
+.info .contenido {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 1rem;
+}
+
 .info {
   display: flex;
   flex-direction: column;
@@ -153,7 +155,7 @@ nav .nav-link:hover {
 
 .contenido .row {
   width: 100%;
-  margin: 3% auto;
+  margin: 3% 0;
 }
 
 .contenido .col {
@@ -196,6 +198,10 @@ nav .nav-link:hover {
 
 #botones-musculos .btn {
   font-size: 1.7rem;
+}
+
+#botones-musculos {
+  margin-bottom: .5rem;
 }
 
 /* Rutinas */
@@ -251,6 +257,12 @@ nav .nav-link:hover {
 #guia p {
   margin: 1rem;
 }
+
+#guia .mas .btn {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
 /* Nutricion */
 
 #nutricion h2 {
