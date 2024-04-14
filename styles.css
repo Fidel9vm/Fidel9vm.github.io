@@ -507,5 +507,13 @@ footer .bi-check-square:hover{
     width: 100%;
     margin: 0;
   }
+  
+  #guia p {
+    margin: 0;
+  }
+  #guia {
+    padding: 0;
+  }
+
 }
 
