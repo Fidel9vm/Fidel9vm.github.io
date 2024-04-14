@@ -195,13 +195,13 @@ nav .nav-link:hover {
 /* Musculos */
 
 #botones-musculos .btn {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 /* Rutinas */
 
 #botones-rutinas .btn {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: 7rem 10px;
 }
 
@@ -456,6 +456,10 @@ footer .bi-check-square:hover{
     margin-top: 2rem;
   }
 
+  {
+    margin-top: 0;
+  }
+
   #botones-rutinas {
     padding: 1rem auto;
     display: flex;
@@ -470,15 +474,17 @@ footer .bi-check-square:hover{
   #copyright {
     margin: 1.5rem auto;
   }
+
+  #ejercicios h3 {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 623px) {
   .contenido .row .col {
     max-height: none;
   }
-  #ejercicios h3 {
-    padding-bottom: 20px;
-  }
+
   #botones-musculos .btn{
     font-size: 1.5rem;
     margin: 3px 0;
