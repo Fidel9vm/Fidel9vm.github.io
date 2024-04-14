@@ -13,12 +13,11 @@ body {
   margin: 0 auto;
 }
 
-.contenido,
 .info .contenido {
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0 1rem;
   max-width: 1250px;
 }
 
@@ -216,7 +215,7 @@ nav .nav-link:hover {
 }
 
 #faq form {
-  margin: 45px auto;
+  margin: 25px auto;
   width: 90%;
   background-color: #650094;
   padding: 20px;
@@ -300,8 +299,7 @@ nav .nav-link:hover {
 .row .carousel img {
   border-radius: 4rem;
   justify-content: center;
-  padding: 2.5rem 0;
-  height: 100%;
+  padding: 1.4rem 0;
   width: 100%;
   filter: brightness(0.5);
 }
@@ -467,10 +465,22 @@ footer .bi-check-square:hover{
   #ejercicios h3 {
     padding-bottom: 20px;
   }
-  #botones-musculos .btn,
-  #botones-rutinas .btn {
+  #botones-musculos .btn{
     font-size: 1.5rem;
     margin: 3px 0;
+  }
+
+  #botones-rutinas .btn{
+    font-size: 2rem;
+    margin: .5rem auto;
+  } 
+
+  .row .carousel {
+    padding: 0;
+  }
+
+  .row .carousel .btn {
+    font-size: 3vw;
   }
 
   .row .carousel H2 {
@@ -478,7 +488,7 @@ footer .bi-check-square:hover{
   }
 
   .row .carousel img {
-    padding: 0;
+    width: 100%;
+    margin: 0;
   }
 }
-
