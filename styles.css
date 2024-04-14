@@ -327,7 +327,7 @@ footer p {
 footer  i{
   color: #100018;
   font-size: 2.5rem;
-  padding: 0 .5rem;
+  padding: 0 .8rem;
   transition: 700ms;
   cursor: pointer;
 }
@@ -454,10 +454,6 @@ footer .bi-check-square:hover{
   }
   #nutricion .mas .btn {
     margin-top: 2rem;
-  }
-
-  {
-    margin-top: 0;
   }
 
   #botones-rutinas {
