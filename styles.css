@@ -13,8 +13,6 @@ body {
   margin: 0 auto;
 }
 
-
-
 p {
   font-size: 20px;
   font-weight: 500;
@@ -97,10 +95,14 @@ nav .nav-link {
 
 .navbar-toggler {
   border: 2px solid rgb(255, 255, 255);
+  transition: 300ms;
 }
 
 .navbar-toggler:hover {
   border: 2px solid rgb(0, 0, 0);
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
 }
 
 nav .nav-link:hover {
@@ -160,7 +162,6 @@ nav .nav-link:hover {
 
 .contenido .col {
   padding: 1.5rem;
-
 }
 
 #ejercicios,
@@ -201,7 +202,7 @@ nav .nav-link:hover {
 }
 
 #botones-musculos {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Rutinas */
@@ -279,10 +280,9 @@ nav .nav-link:hover {
   border: 5px solid #b800b8;
   border-radius: 10px;
   background-color: #3b0058;
-
 }
 
-.row .carousel .carousel-item{
+.row .carousel .carousel-item {
   position: relative;
   background-color: #3b0058;
 }
@@ -322,7 +322,6 @@ nav .nav-link:hover {
 
 footer {
   background-color: #b800b8;
-
   bottom: 0;
 }
 
@@ -336,18 +335,18 @@ footer p {
   color: #100018;
 }
 
-footer  i{
+footer i {
   color: #100018;
   font-size: 2.5rem;
-  padding: 0 .8rem;
+  padding: 0 0.8rem;
   transition: 700ms;
   cursor: pointer;
 }
 
-footer .contacto i{
+footer .contacto i {
   color: black;
   font-size: 1rem;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   transition: 700ms;
   cursor: pointer;
 }
@@ -360,7 +359,7 @@ footer i.bi-check-square {
   color: white;
 }
 
-footer .bi-check-square:hover{
+footer .bi-check-square:hover {
   color: black;
 }
 
@@ -378,11 +377,25 @@ footer .bi-check-square:hover{
   text-decoration: underline;
 }
 
+#contacto {
+  color: black;
+  font-size: 1.8rem;
+}
 
+#integrantes {
+  text-decoration: none;
+  color: black;
+  font-size: 1.7rem;
+  transition: 400ms;
+  font-weight: bold;
+}
+
+#integrantes:hover {
+  color: white;
+
+}
 
 /* Mediaquerys */
-
-/* Media queries */
 @media screen and (max-width: 1200px) {
   .hero button {
     display: none;
@@ -397,7 +410,6 @@ footer .bi-check-square:hover{
     font-size: 2rem;
     margin: 1rem;
   }
-
 }
 
 @media screen and (max-width: 1080px) {
@@ -454,7 +466,7 @@ footer .bi-check-square:hover{
   #ejercicios h3 {
     padding-bottom: 40px;
   }
-  #botones-musculos .btn{
+  #botones-musculos .btn {
     font-size: 1.5rem;
     margin: 3px;
     flex: auto;
@@ -497,15 +509,15 @@ footer .bi-check-square:hover{
     max-height: none;
   }
 
-  #botones-musculos .btn{
+  #botones-musculos .btn {
     font-size: 1.5rem;
     margin: 3px 0;
   }
 
-  #botones-rutinas .btn{
+  #botones-rutinas .btn {
     font-size: 2rem;
-    margin: .5rem auto;
-  } 
+    margin: 0.5rem auto;
+  }
 
   .row .carousel {
     padding: 0;
@@ -523,13 +535,11 @@ footer .bi-check-square:hover{
     width: 100%;
     margin: 0;
   }
-  
+
   #guia p {
     margin: 0;
   }
   #guia {
     padding: 0;
   }
-
 }
-

@@ -20,6 +20,7 @@ importComponent('../../components/contenidos-index/index-nutricion.html', 'nutri
 importComponent('../../components/contenidos-index/index-rutinas.html', 'rutinas');
 importComponent('../../components/contenidos-index/index-faq.html', 'faq');
 importComponent('../../components/contenidos-index/index-grupo30.html', 'grupo30');
+importComponent('../../components/contenidos-index/index-carousel.html', 'carouselExampleAutoplaying');
 importComponent('../../../components/footer.html','footer');
 importComponent('rutinas-navbar.html','rutinas-navbar');
 importComponent('../ejercicios-navbar.html','ejercicios-navbar');
