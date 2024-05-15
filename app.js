@@ -14,3 +14,7 @@ function copyText(event, text, icon) {
   icon.innerHTML = '<i class="bi bi-check-square"></i>';
   // Elimina el evento de clic una vez que se ha cambiado el ícono
 }
+
+ScrollReveal().reveal('.row', {delay: 200});
+ScrollReveal({ reset: true });
+
