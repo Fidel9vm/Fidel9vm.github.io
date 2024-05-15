@@ -154,6 +154,11 @@ nav .nav-link:hover {
   max-width: 950px;
 }
 
+.contenido h4 {
+  color: #3b0058;
+  font-weight: bold;
+}
+
 /* Contenido */
 
 .contenido .row {
@@ -440,8 +445,9 @@ footer .bi-check-square:hover {
 
 #integrantes:hover {
   color: white;
-
 }
+
+
 
 /* Mediaquerys */
 @media screen and (max-width: 1250px) {
