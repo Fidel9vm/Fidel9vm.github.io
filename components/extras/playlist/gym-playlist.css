@@ -1,20 +1,37 @@
+.row .col {
+    padding: 2rem;
+}
+
 .canciones a,
 .canciones i {
     color: black;   
     text-decoration: none;
     font-size: 2rem;
     padding: .5rem;
-    transition: 400ms;
+    transition: 200ms;
 }
 
 .canciones a:hover{
     color: #b800b8;
+    font-size: 2.1rem;
     i {
         color: #b800b8;
+        font-size: 2.1rem;
     }
 }
 
 .canciones {
-    padding: 1rem;
     user-select: none;
+}
+
+#gym-music {
+    max-width: 400px;
+}
+
+#gym-music h2 {
+    color: #650094;
+}
+
+#gym-music  i {
+    color: #650094;
 }

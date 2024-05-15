@@ -23,12 +23,12 @@ label {
 }
 
 .file-label.btn {
-    color: white;
-    background-color: #650094;
+    color: #130011;
+    background-color: white;
 }   
 
 .file-label.btn:hover {
-    background-color: #650094;
+    background-color: #130011;
     border: none;
     border: 1px solid white;
     color: white;
