@@ -1,0 +1,42 @@
+
+.row .col {
+    max-width: 500px;
+    background-color: #130011;
+}
+
+.row .col h2 {
+    color: white;
+}
+
+hr {
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+#formularioContacto div{
+    text-align: start;
+    font-size: 1.4rem;
+    padding: .5rem;
+}
+
+.file-label.btn {
+    color: white;
+    background-color: #650094;
+}   
+
+.file-label.btn:hover {
+    background-color: #650094;
+    border: none;
+    border: 1px solid white;
+    color: white;
+}
+
+span.error {
+    color: white;
+    font-size: 2rem;
+    display: block; 
+    margin-top: 5px;
+  }

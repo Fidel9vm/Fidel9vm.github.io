@@ -1,0 +1,20 @@
+.canciones a,
+.canciones i {
+    color: black;   
+    text-decoration: none;
+    font-size: 2rem;
+    padding: .5rem;
+    transition: 400ms;
+}
+
+.canciones a:hover{
+    color: #b800b8;
+    i {
+        color: #b800b8;
+    }
+}
+
+.canciones {
+    padding: 1rem;
+    user-select: none;
+}
