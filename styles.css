@@ -323,9 +323,6 @@ nav .nav-link:hover {
 footer {
   background-color: #b800b8;
   bottom: 0;
-}
-
-footer h4 {
   user-select: none;
 }
 
@@ -334,7 +331,7 @@ footer p {
   margin-bottom: 3px;
   color: #100018;
 }
-
+/* 
 footer i {
   color: #100018;
   font-size: 2.5rem;
@@ -353,7 +350,7 @@ footer .contacto i {
 
 footer i:hover {
   color: white;
-}
+} */
 
 footer i.bi-check-square {
   color: white;
@@ -366,7 +363,6 @@ footer .bi-check-square:hover {
 #año {
   padding-top: 3px;
   font-size: 1.5rem;
-  user-select: none;
 }
 
 #mail {
@@ -382,11 +378,27 @@ footer .bi-check-square:hover {
   font-size: 1.8rem;
 }
 
+#contacto i {
+  font-size: 2rem;
+  color: black;
+}
+
+#link-git {
+  color: black;
+  text-decoration: none;
+  transition: 500ms;
+}
+
+#link-git:hover {
+  color: white;
+}
+
+
 #integrantes {
   text-decoration: none;
   color: black;
   font-size: 1.7rem;
-  transition: 400ms;
+  transition: 500ms;
   font-weight: bold;
 }
 

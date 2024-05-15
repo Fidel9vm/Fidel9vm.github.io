@@ -1,53 +1,102 @@
 .row .col {
-    padding: 1rem;
-    border-radius: 10px;
-    background-color: #090008;
-    max-width: 600px;
-  }
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #090008;
+}
 
-  .animate__animated {
-    background-color: blueviolet;
-    color: #090008;
-    border-radius: 10px;
-    padding: 0.5rem;
-  }
+.row .grupo {
+  max-width: 600px;
+  padding: 1rem;
+}
 
-  .grupo h2 {
-    font-size: 3.5rem;
-    transition: 300ms;
-  }
-  .grupo h2:hover {
-    font-size: 4rem;
-  }
-  .grupo h3 {
-    font-size: 3rem;
-    transition: 300ms;
-  }
-  .grupo h3:hover {
-    font-size: 3.5rem;
-  }
-  .grupo p {
-    font-size: 2.5rem;
-    user-select: none;
-    transition: 300ms;
-  }
-  .grupo p:hover {
-    font-size: 3rem;
-  }
-  h4 {
-    font-size: 3rem;
-    font-weight: bold;
-    transition: 300ms;
-    user-select: none;
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  h4:hover {
-    font-size: 3.5rem;
-  }
+.animate__animated {
+  background-color: blueviolet;
+  color: #090008;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
 
-  .integrantes h3{
-    color: white;
-    font-size: 2.5rem;
-  }
+.grupo h2 {
+  font-size: 3.5rem;
+  transition: 300ms;
+}
+.grupo h2:hover {
+  font-size: 4rem;
+}
+.grupo h3 {
+  font-size: 3rem;
+  transition: 300ms;
+}
+.grupo h3:hover {
+  font-size: 3.5rem;
+}
+.grupo p {
+  font-size: 2.5rem;
+  user-select: none;
+  transition: 300ms;
+}
+.grupo p:hover {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.7rem;
+  font-weight: bold;
+  transition: 300ms;
+  user-select: none;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+h4:hover {
+  font-size: 3.5rem;
+}
+
+.integrantes .info-integrante {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  text-align: center; /* Espacio entre la imagen y el título */
+  margin-left: 2.5rem;
+}
+.integrantes .info-integrante img {
+  width: 180px; /* Ajusta el ancho máximo de la imagen según tu preferencia */
+  height: auto; /* Para mantener la proporción */
+  border-radius: 50%;
+}
+
+.integrantes .info-integrante h3 {
+  color: white;
+  font-size: 3.5rem;
+  justify-content: center;
+}
+
+.integrantes .contacto-integrante p {
+  margin: 1rem auto;
+  text-align: left;
+  color: white;
+  font-size: 2rem;
+  font-weight: bolder;
+  user-select: none;
+  margin-left: 2rem;
+}
+
+.integrantes .contacto-integrante p i {
+  font-size: 2rem;
+  padding: .5rem;
+}
+
+.integrantes .contacto-integrante p i:hover {
+  color: blueviolet;
+} 
+
+.integrantes .contacto-integrante p a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: .5rem;
+  font-weight: 500;
+}
+
+.integrantes .contacto-integrante p a:hover {
+  text-decoration: underline;
+}
