@@ -38,7 +38,7 @@
 .grupo p:hover {
   font-size: 3rem;
 }
-h4 {
+h4.animate__animated {
   font-size: 2.7rem;
   font-weight: bold;
   transition: 300ms;
@@ -46,6 +46,7 @@ h4 {
   max-width: 500px;
   margin: 0 auto;
   text-align: center;
+  color: #090008;
 }
 h4:hover {
   font-size: 3.5rem;
@@ -102,7 +103,24 @@ h4:hover {
 }
 
 
-@media screen and (max-width: ) {
+@media screen and (max-width: 580px) {
+  .integrantes .info-integrante img {
+    display: none;
+  }
+  .integrantes .contacto-integrante p{
+    margin-left: 0;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .integrantes .contacto-integrante p i {
+    font-size: 1.4rem;
+  }
+  .integrantes .contacto-integrante p a {
+    font-size: 1rem;
+}
 
-  
+  .integrantes .info-integrante h3 {
+    font-size: 2.5rem;
+  }
+
 }
