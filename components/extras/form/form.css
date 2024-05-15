@@ -40,3 +40,9 @@ span.error {
     display: block; 
     margin-top: 5px;
   }
+
+  @media screen and (max-width: 400px) {
+    #formularioContacto div input{
+        font-size: 1.2rem !important;
+    }
+}
