@@ -555,6 +555,11 @@ footer .bi-check-square:hover {
     align-items: center;
     justify-content: center;
   }
+  #extras a.btn {
+
+    font-size: 2rem;
+
+  }
 }
 
 @media screen and (max-width: 768px) {
