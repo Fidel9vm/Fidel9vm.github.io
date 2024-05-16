@@ -8,7 +8,7 @@
     color: white;
 }
 
-hr {
+.row .col hr {
     color: white;
 }
 
@@ -32,6 +32,13 @@ label {
     border: none;
     border: 1px solid white;
     color: white;
+}
+
+#formularioContacto input,
+#formularioContacto textarea,
+#formularioContacto select{
+    background-color: white;
+    color: black;
 }
 
 span.error {
