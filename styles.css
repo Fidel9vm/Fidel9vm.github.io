@@ -67,21 +67,21 @@ nav {
 }
 
 .navbar-nav {
-  margin-right: 1rem;
+  margin-right: 0rem;
 }
 
 .nav-link {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: white;
   transition: 400ms;
   user-select: none;
-  font-weight: 500;
+  font-weight: bolder;
 }
 
 nav .nav-link {
   background-color: #b800b8;
   margin-right: auto;
-  padding: 12px;
+  padding: 11px;
 }
 
 .navbar-collapse {
@@ -362,7 +362,7 @@ nav .nav-link:hover {
 /* Footer  */
 
 footer {
-  background-color: #b800b8;
+  background-color: #d400ff;
   bottom: 0;
   user-select: none;
 }
@@ -370,9 +370,9 @@ footer {
 footer p {
   margin: 0px;
   margin-bottom: 3px;
-  color: #100018;
 }
 /* 
+
 footer i {
   color: #100018;
   font-size: 2.5rem;

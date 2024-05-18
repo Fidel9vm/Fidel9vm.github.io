@@ -2,6 +2,8 @@
   padding: 2rem;
   border-radius: 10px;
   background-color: #130011;
+  border: none;
+  box-shadow: 0 0 15px #b800b8;
 }
 
 .row .grupo {
@@ -10,46 +12,62 @@
 }
 
 .animate__animated {
-  background-color: blueviolet;
-  color: #090008;
+  color: white;
+  text-shadow: 3px 3px 7px #b800b8;
   border-radius: 10px;
-  padding: 0.5rem;
+  font-weight: bolder;
 }
 
-.grupo h2 {
-  font-size: 3.5rem;
+.curso h2 {
+  padding-top: 2rem;
+  font-size: 5rem;
   transition: 300ms;
+  font-weight: bolder;
+
 }
-.grupo h2:hover {
-  font-size: 4rem;
+.curso h2:hover {
+  text-shadow: 3px 3px 11px #b800b8;
+  color: white;
 }
-.grupo h3 {
-  font-size: 3rem;
+.curso h3 {
+  font-size: 5rem;
   transition: 300ms;
+  font-weight: bolder;
+
 }
-.grupo h3:hover {
+.curso h3:hover {
+  text-shadow: 3px 3px 11px #b800b8;
+  color: white;
+}
+.curso p {
   font-size: 3.5rem;
-}
-.grupo p {
-  font-size: 2.5rem;
   user-select: none;
   transition: 300ms;
+  font-weight: bolder;
+  padding-bottom: 1rem;
+
 }
-.grupo p:hover {
-  font-size: 3rem;
+.curso p:hover {
+  text-shadow: 3px 3px 11px #b800b8;
+  color: white;
 }
-h4.animate__animated {
-  font-size: 2.7rem;
+
+.curso hr {
+  color: #b800b8;
+}
+
+.curso h4 {
+  font-size: 4.5rem;
   font-weight: bold;
   transition: 300ms;
   user-select: none;
-  max-width: 500px;
   margin: 0 auto;
   text-align: center;
-  color: #090008;
+  color: white;
 }
-h4:hover {
-  font-size: 3.5rem;
+.curso h4:hover {
+  text-shadow: 3px 3px 11px #b800b8;
+  color: white;
 }
 
 .integrantes .info-integrante {
@@ -63,6 +81,7 @@ h4:hover {
   width: 180px; /* Ajusta el ancho máximo de la imagen según tu preferencia */
   height: auto; /* Para mantener la proporción */
   border-radius: 50%;
+  box-shadow: 3px 3px 7px #b800b8;
 }
 
 .integrantes .info-integrante h3 {
@@ -83,18 +102,18 @@ h4:hover {
 
 .integrantes .contacto-integrante p i {
   font-size: 2rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .integrantes .contacto-integrante p i:hover {
   color: blueviolet;
-} 
+}
 
 .integrantes .contacto-integrante p a {
   color: white;
   font-size: 1.5rem;
   text-decoration: none;
-  padding: .5rem;
+  padding: 0.5rem;
   font-weight: 500;
 }
 
@@ -102,12 +121,11 @@ h4:hover {
   text-decoration: underline;
 }
 
-
 @media screen and (max-width: 580px) {
   .integrantes .info-integrante img {
     display: none;
   }
-  .integrantes .contacto-integrante p{
+  .integrantes .contacto-integrante p {
     margin-left: 0;
     margin: 0;
     font-size: 1rem;
@@ -117,10 +135,14 @@ h4:hover {
   }
   .integrantes .contacto-integrante p a {
     font-size: 1rem;
-}
+  }
 
   .integrantes .info-integrante h3 {
     font-size: 2.5rem;
   }
 
+  .curso h4 {
+    font-size: 15vw;
+    padding-bottom: 2rem;
+  }
 }
