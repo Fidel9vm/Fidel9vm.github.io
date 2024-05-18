@@ -1,19 +1,19 @@
 function scrollDown() {
-  window.scrollBy(0, 700); // Desplaza la página hacia abajo 500 píxeles
+  window.scrollBy(0, 720); // Desplaza la página hacia abajo 700 píxeles
 }
 
-function copyText(event, text, icon) {
-  event.preventDefault();
-  const tempInput = document.createElement('input');
-  tempInput.value = text;
-  document.body.appendChild(tempInput);
-  tempInput.select();
-  document.execCommand('copy');
-  document.body.removeChild(tempInput);
-  // Cambia el ícono a uno de verificación (check-square)
-  icon.innerHTML = '<i class="bi bi-check-square"></i>';
-  // Elimina el evento de clic una vez que se ha cambiado el ícono
-}
+// function copyText(event, text, icon) {
+//   event.preventDefault();
+//   const tempInput = document.createElement('input');
+//   tempInput.value = text;
+//   document.body.appendChild(tempInput);
+//   tempInput.select();
+//   document.execCommand('copy');
+//   document.body.removeChild(tempInput);
+//   // Cambia el ícono a uno de verificación (check-square)
+//   icon.innerHTML = '<i class="bi bi-check-square"></i>';
+//   // Elimina el evento de clic una vez que se ha cambiado el ícono
+// }
 
 var frases = [
   "Si no tienes confianza, siempre encontrarás una forma de no ganar. - Carl Lewis",

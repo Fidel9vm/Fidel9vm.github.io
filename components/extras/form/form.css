@@ -22,6 +22,11 @@ label {
     padding: .5rem;
 }
 
+#formularioContacto input#imagen {
+    color: white;
+    background-color: #130011 !important;
+}
+
 .file-label.btn {
     color: #130011;
     background-color: white;
@@ -40,13 +45,6 @@ label {
     background-color: white;
     color: black;
 }
-
-span.error {
-    color: white;
-    font-size: 2rem;
-    display: block; 
-    margin-top: 5px;
-  }
 
   @media screen and (max-width: 400px) {
     #formularioContacto div input{
