@@ -31,83 +31,57 @@
         <article class="col">
           <h2>Formulario</h2>
           <hr />
-          <form id="formularioContacto" onsubmit="return validarFormulario()">
+          <form id="formularioContacto">
             <div>
-              <label for="nombre">Nombre:</label>
-              <br />
-              <input type="text" id="nombre" name="nombre" required />
-              <span class="error" id="errorNombre"></span>
+                <label for="nombre">Nombre:</label><br />
+                <input type="text" id="nombre" name="nombre" required />
+                <span class="error" id="errorNombre"></span>
             </div>
             <div>
-              <label for="email">Email:</label>
-              <br />
-              <input type="email" id="email" name="email" required />
-              <span class="error" id="errorEmail"></span>
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email" required />
+                <span class="error" id="errorEmail"></span>
             </div>
             <div>
-              <label for="mensaje">Mensaje:</label>
-              <br />
-              <textarea id="mensaje" name="mensaje" required></textarea>
-              <span class="error" id="errorMensaje"></span>
+                <label for="mensaje">Mensaje:</label><br />
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <span class="error" id="errorMensaje"></span>
             </div>
             <div>
-              <label for="motivo">Motivo de contacto:</label>
-              <br />
-              <select id="motivo" name="motivo" required>
-                <option value="">Seleccionar motivo</option>
-                <option value="consulta">Consulta</option>
-                <option value="comentario">Comentario</option>
-                <option value="sugerencia">Sugerencia</option>
-              </select>
-              <span class="error" id="errorMotivo"></span>
+                <label for="motivo">Motivo de contacto:</label><br />
+                <select id="motivo" name="motivo" required>
+                    <option value="">Seleccionar motivo</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="comentario">Comentario</option>
+                    <option value="sugerencia">Sugerencia</option>
+                </select>
+                <span class="error" id="errorMotivo"></span>
             </div>
             <div>
-              <label>Preferencias de contacto:</label><br />
-              <input
-                type="checkbox"
-                id="prefEmail"
-                name="prefContacto"
-                value="email"
-              />
-              <label for="prefEmail">Email</label><br />
-              <input
-                type="checkbox"
-                id="prefTelefono"
-                name="prefContacto"
-                value="telefono"
-              />
-              <label for="prefTelefono">Teléfono</label><br />
-              <input
-                type="checkbox"
-                id="prefWhatsapp"
-                name="prefContacto"
-                value="whatsapp"
-              />
-              <label for="prefWhatsapp">Whatsapp</label><br />
-              <span class="error" id="errorPrefContacto"></span>
+                <label>Preferencias de contacto:</label><br />
+                <input type="checkbox" id="prefEmail" name="prefContacto" value="email" />
+                <label for="prefEmail">Email</label><br />
+                <input type="checkbox" id="prefTelefono" name="prefContacto" value="telefono" />
+                <label for="prefTelefono">Teléfono</label><br />
+                <input type="checkbox" id="prefWhatsapp" name="prefContacto" value="whatsapp" />
+                <label for="prefWhatsapp">Whatsapp</label><br />
+                <span class="error" id="errorPrefContacto"></span>
             </div>
-
+        
             <!-- Campo para subir una imagen -->
             <div id="subirImagen">
-              <label for="imagen">Subir imagen:</label><br />
-              <input
-                type="file"
-                id="fileInput"
-                name="imagen"
-                accept="image/*"
-                style="display: none"
-              />
-              <button
-                type="button"
-                onclick="document.getElementById('fileInput').click();"
-              >
-                Seleccionar imagen
-              </button>
-              <span id="nombreArchivo"><i class="bi bi-upload"></i></span>
+                <label for="imagen">Subir imagen:</label><br />
+                <input type="file" id="fileInput" name="imagen" accept="image/*" style="display: none;" />
+                <button type="button" onclick="document.getElementById('fileInput').click();">
+                    Seleccionar imagen
+                </button>
+                <span id="nombreArchivo"><i class="bi bi-upload"></i></span>
             </div>
             <br>
-            <button class="btn" type="submit" style="font-size: 1.5rem;">Enviar</button>
-          </form>
+            <button class="btn" type="submit" style="font-size: 1.5rem;" disabled>Enviar</button>
+        </form>
+        
+        
         </article>
       </section>
     </div>

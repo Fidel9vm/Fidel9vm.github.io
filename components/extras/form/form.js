@@ -1,62 +1,41 @@
+// Función para validar el formulario
 function validarFormulario() {
-    var formulario = document.getElementById("formularioContacto");
-    var nombre = document.getElementById("nombre").value;
-    var email = document.getElementById("email").value;
-    var mensaje = document.getElementById("mensaje").value;
-    var motivo = document.getElementById("motivo").value;
-    var prefContacto = document.querySelectorAll('input[name="prefContacto"]:checked').length;
-    var imagen = document.getElementById("imagen").value;
-    var errorNombre = document.getElementById("errorNombre");
-    var errorEmail = document.getElementById("errorEmail");
-    var errorMensaje = document.getElementById("errorMensaje");
-    var errorMotivo = document.getElementById("errorMotivo");
-    var errorPrefContacto = document.getElementById("errorPrefContacto");
-    var errorImagen = document.getElementById("errorImagen");
-  
-    errorNombre.innerHTML = "";
-    errorEmail.innerHTML = "";
-    errorMensaje.innerHTML = "";
-    errorMotivo.innerHTML = "";
-    errorPrefContacto.innerHTML = "";
-    errorImagen.innerHTML = "";
-  
-    var valido = true;
-  
-    if (nombre === "") {
-      errorNombre.innerHTML = "Por favor, ingresa tu nombre";
-      valido = false;
-    }
-  
-    if (email === "") {
-      errorEmail.innerHTML = "Por favor, ingresa tu email";
-      valido = false;
-    }
-  
-    if (mensaje === "") {
-      errorMensaje.innerHTML = "Por favor, ingresa tu mensaje";
-      valido = false;
-    }
-  
-    if (motivo === "") {
-      errorMotivo.innerHTML = "Por favor, selecciona un motivo";
-      valido = false;
-    }
-  
-    if (prefContacto === 0) {
-      errorPrefContacto.innerHTML = "Por favor, selecciona al menos una preferencia de contacto";
-      valido = false;
-    }
-  
-    if (imagen === "") {
-      errorImagen.innerHTML = "Por favor, adjunta una imagen";
-      valido = false;
-    }
-  
-    return valido;
+  var nombre = document.getElementById("nombre").value;
+  var email = document.getElementById("email").value;
+  var mensaje = document.getElementById("mensaje").value;
+  var motivo = document.getElementById("motivo").value;
+  var prefContacto = document.querySelectorAll('input[name="prefContacto"]:checked').length;
+  var imagen = document.getElementById("fileInput").files.length;
+
+  if (nombre === "" || email === "" || mensaje === "" || motivo === "" || prefContacto === 0 || imagen === 0) {
+      return false;
   }
 
+  return true;
+}-
 
-      // Función para mostrar el nombre del archivo seleccionado
-      document.getElementById('fileInput').addEventListener('change', function() {
-        document.getElementById('nombreArchivo').innerHTML = '<i class="bi bi-check2-square"></i>';
-    });
+// Función para habilitar o deshabilitar el botón de enviar según la validación del formulario
+function actualizarBotonEnviar() {
+  var botonEnviar = document.querySelector("#formularioContacto button[type='submit']");
+  botonEnviar.disabled = !validarFormulario();
+}
+
+// Manejador del evento change para el campo de entrada de tipo archivo
+document.getElementById('fileInput').addEventListener('change', function() {
+  var nombreArchivo = document.getElementById('nombreArchivo');
+  var fileInput = document.getElementById('fileInput');
+  if (fileInput.files.length > 0) {
+      nombreArchivo.innerHTML = '<i class="bi bi-check2-square"></i>';
+  } else {
+      nombreArchivo.innerHTML = '<i class="bi bi-upload"></i>';
+  }
+  actualizarBotonEnviar(); // Llama a la función actualizarBotonEnviar para habilitar/deshabilitar el botón de enviar
+});
+
+// Manejador del evento input para los campos del formulario
+document.querySelectorAll('#formularioContacto input, #formularioContacto textarea, #formularioContacto select').forEach(function(element) {
+  element.addEventListener('input', actualizarBotonEnviar);
+});
+
+// Llamar a la función actualizarBotonEnviar inicialmente para asegurarse de que el botón de enviar esté configurado correctamente al cargar la página
+actualizarBotonEnviar();
