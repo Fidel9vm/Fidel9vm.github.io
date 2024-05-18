@@ -30,29 +30,29 @@
       <section class="row">
         <article class="col">
           <h2>Formulario</h2>
-          <hr>
+          <hr />
           <form id="formularioContacto" onsubmit="return validarFormulario()">
             <div>
               <label for="nombre">Nombre:</label>
-              <br>
+              <br />
               <input type="text" id="nombre" name="nombre" required />
               <span class="error" id="errorNombre"></span>
             </div>
             <div>
               <label for="email">Email:</label>
-              <br>
+              <br />
               <input type="email" id="email" name="email" required />
               <span class="error" id="errorEmail"></span>
             </div>
             <div>
               <label for="mensaje">Mensaje:</label>
-              <br>
+              <br />
               <textarea id="mensaje" name="mensaje" required></textarea>
               <span class="error" id="errorMensaje"></span>
             </div>
             <div>
               <label for="motivo">Motivo de contacto:</label>
-              <br> 
+              <br />
               <select id="motivo" name="motivo" required>
                 <option value="">Seleccionar motivo</option>
                 <option value="consulta">Consulta</option>
@@ -86,21 +86,27 @@
               <label for="prefWhatsapp">Whatsapp</label><br />
               <span class="error" id="errorPrefContacto"></span>
             </div>
-            <div>
-                <label for="imagen">Adjuntar imagen:</label>
-                <br>
-                <input
-                  type="file"
-                  id="imagen"
-                  name="imagen"
-                  accept="image/*"
-                  style="font-size: 1.1rem;"
-                />
-                <span class="error" id="errorImagen"></span>
-              </div>
-              
-              <br>
-            <button class="btn" type="submit">Enviar</button>
+
+            <!-- Campo para subir una imagen -->
+            <div id="subirImagen">
+              <label for="imagen">Subir imagen:</label><br />
+              <input
+                type="file"
+                id="fileInput"
+                name="imagen"
+                accept="image/*"
+                style="display: none"
+              />
+              <button
+                type="button"
+                onclick="document.getElementById('fileInput').click();"
+              >
+                Seleccionar imagen
+              </button>
+              <span id="nombreArchivo"><i class="bi bi-upload"></i></span>
+            </div>
+            <br>
+            <button class="btn" type="submit" style="font-size: 1.5rem;">Enviar</button>
           </form>
         </article>
       </section>
@@ -110,7 +116,6 @@
       <!-- Footer -->
     </footer>
 
-    <script src="form.js"></script>
     <script src="../../app.js"></script>
     <script src="../../../components.js"></script>
     <script
@@ -118,5 +123,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="form.js"></script>
   </body>
 </html>

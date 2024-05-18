@@ -54,3 +54,9 @@ function validarFormulario() {
   
     return valido;
   }
+
+
+      // Función para mostrar el nombre del archivo seleccionado
+      document.getElementById('fileInput').addEventListener('change', function() {
+        document.getElementById('nombreArchivo').innerHTML = '<i class="bi bi-check2-square"></i>';
+    });

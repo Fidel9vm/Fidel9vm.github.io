@@ -22,11 +22,6 @@ label {
     padding: .5rem;
 }
 
-#formularioContacto input#imagen {
-    color: white;
-    background-color: #130011 !important;
-}
-
 .file-label.btn {
     color: #130011;
     background-color: white;
@@ -45,6 +40,16 @@ label {
     background-color: white;
     color: black;
 }
+
+#subirImagen i.bi{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+#subirImagen button {
+    padding: 0 .8rem;
+}
+
 
   @media screen and (max-width: 400px) {
     #formularioContacto div input{
