@@ -1,7 +1,9 @@
 
 .row .col {
     max-width: 500px;
-    background-color: #130011;
+    background-color: #09000d;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #b800b8;
 }
 
 .row .col h2 {
