@@ -1,103 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WikiFit</title>
-    <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <!-- css style -->
-    <link rel="stylesheet" href="../../../styles.css" />
-    <link rel="stylesheet" href="../../components.css" />
-    <link rel="stylesheet" href="form.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WikiFit</title>
+  <!-- bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <!-- css style -->
+  <link rel="stylesheet" href="../../../styles.css" />
+  <link rel="stylesheet" href="../../components.css" />
+  <link rel="stylesheet" href="form.css" />
+  <style>
+  </style>
+</head>
 
-  <body>
-    <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
-      <!-- Tabla de Navegación -->
-    </nav>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
+    <!-- Tabla de Navegación -->
+  </nav>
 
-    <!-- formulario -->
-    <div class="contenido">
-      <section class="row">
-        <article class="col">
-          <h2>Formulario</h2>
-          <hr />
-          <form id="formularioContacto">
-            <div>
-                <label for="nombre">Nombre:</label><br />
-                <input type="text" id="nombre" name="nombre" required />
-                <span class="error" id="errorNombre"></span>
+  <!-- formulario -->
+  <div class="contenido">
+    <section class="row">
+      <article class="col">
+        <h2>Formulario</h2>
+        <hr />
+        <form id="contactForm" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje:</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="reason" class="form-label">Razón del Contacto:</label>
+            <select class="form-select" id="reason" name="reason" required>
+              <option value="">Seleccione una opción</option>
+              <option value="consulta">Consulta</option>
+              <option value="soporte">Soporte</option>
+              <option value="otros">Otros</option>
+            </select>
+          </div>
+          <div class="mb-3 form-check" style="padding-left: 3rem;">
+            <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+            <label class="form-check-label" for="terms">Acepto los términos y condiciones</label>
+          </div>
+          <div class="mb-3">
+            <label for="image" class="form-label">Foto de perfil:</label>
+            <div id="file-label">
+              <button type="button" class="btn" onclick="document.getElementById('image').click();">Subir imagen</button>
+              <i id="file-icon" class="bi bi-box-arrow-in-down" style="color: white; font-size: 1.5rem;"></i>
             </div>
-            <div>
-                <label for="email">Email:</label><br />
-                <input type="email" id="email" name="email" required />
-                <span class="error" id="errorEmail"></span>
-            </div>
-            <div>
-                <label for="mensaje">Mensaje:</label><br />
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                <span class="error" id="errorMensaje"></span>
-            </div>
-            <div>
-                <label for="motivo">Motivo de contacto:</label><br />
-                <select id="motivo" name="motivo" required>
-                    <option value="">Seleccionar motivo</option>
-                    <option value="consulta">Consulta</option>
-                    <option value="comentario">Comentario</option>
-                    <option value="sugerencia">Sugerencia</option>
-                </select>
-                <span class="error" id="errorMotivo"></span>
-            </div>
-            <div>
-                <label>Preferencias de contacto:</label><br />
-                <input type="checkbox" id="prefEmail" name="prefContacto" value="email" />
-                <label for="prefEmail">Email</label><br />
-                <input type="checkbox" id="prefTelefono" name="prefContacto" value="telefono" />
-                <label for="prefTelefono">Teléfono</label><br />
-                <input type="checkbox" id="prefWhatsapp" name="prefContacto" value="whatsapp" />
-                <label for="prefWhatsapp">Whatsapp</label><br />
-                <span class="error" id="errorPrefContacto"></span>
-            </div>
-        
-            <!-- Campo para subir una imagen -->
-            <div id="subirImagen">
-                <label for="imagen">Subir imagen:</label><br />
-                <input type="file" id="fileInput" name="imagen" accept="image/*" style="display: none;" />
-                <button type="button" onclick="document.getElementById('fileInput').click();">
-                    Seleccionar imagen
-                </button>
-                <span id="nombreArchivo"><i class="bi bi-upload"></i></span>
-            </div>
-            <br>
-            <button class="btn" type="submit" style="font-size: 1.5rem;" disabled>Enviar</button>
+            <input type="file" id="image" name="image" accept="image/*" required>
+            <div id="error-mensaje" style="display: none; color: #dc3545;">Por favor, seleccione una imagen.</div>
+
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn">Enviar</button>
+          </div>
         </form>
-        
-        
-        </article>
-      </section>
-    </div>
+      </article>
+    </section>
+  </div>
 
-    <footer id="footer">
-      <!-- Footer -->
-    </footer>
-
-    <script src="../../app.js"></script>
-    <script src="../../../components.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="form.js"></script>
-  </body>
+  <footer id="footer">
+    <!-- Footer -->
+  </footer>
+  <script src="form.js"></script>
+  <script src="../../app.js"></script>
+  <script src="../../../components.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</body>
 </html>
