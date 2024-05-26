@@ -2,36 +2,39 @@
     padding: 2rem;
 }
 
-.canciones a,
-.canciones i {
-    color: black;   
+#canciones a,
+#canciones i {
+    color: white;   
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding: .5rem;
     transition: 200ms;
 }
 
-.canciones a:hover{
+#canciones a:hover{
     color: #b800b8;
-    font-size: 2.1rem;
     i {
         color: #b800b8;
-        font-size: 2.1rem;
     }
 }
 
-.canciones {
+h3 {
+    font-size: 2.3rem;
+}
+
+#canciones {
     user-select: none;
 }
 
 #gym-music {
-    max-width: 400px;
+    padding: 0;
 }
 
-#gym-music h2 {
-    color: #650094;
+#gym-music h2{
+    color: white;
+    font-size: 5rem;
+    font-weight: bolder;
+    
 }
 
-#gym-music  i {
-    color: #650094;
-}
+
