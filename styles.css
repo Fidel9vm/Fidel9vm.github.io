@@ -23,6 +23,7 @@ h1,
 h2,
 h3 {
   user-select: none;
+  transition: 300ms;
 }
 
 i {
@@ -42,6 +43,11 @@ h3 {
 .contenido .col {
   margin-right: 2rem; /* Ajusta el valor según sea necesario */
   border: #b800b8;
+}
+
+h2:hover,
+h3:hover {
+  text-shadow: 1px 1px 1px white;
 }
 
 /* Para evitar que el último elemento tenga margen derecho */
@@ -178,7 +184,6 @@ nav .nav-link:hover {
 #rutinas,
 #nutricion,
 #faq,
-#grupo30,
 #iframe,
 #extras,
 #canciones {
@@ -186,8 +191,21 @@ nav .nav-link:hover {
   color: white;
   box-shadow: 2px 2px 10px #b800b8;
   border-radius: 10px;
-  user-select: none;
-  
+  user-select: none; 
+  transition: 300ms;
+}
+
+#ejercicios:hover,
+#guia:hover,
+#rutinas:hover,
+#nutricion:hover,
+#faq:hover,
+#grupo30:hover,
+#iframe:hover,
+#extras:hover,
+#canciones:hover{
+  background-color: #0e0014;
+  box-shadow: 2px 2px 15px #b800b8;
 }
 
 #guia p,
@@ -301,14 +319,18 @@ nav .nav-link:hover {
 /* Carousel */
 
 .row .carousel {
-  box-shadow: 1px 1px 17px #d400ff;
+  box-shadow: 2px 2px 10px #d400ff;
   border-radius: 10px;
-  background-color: #3b0058;
+  background-color: #09000d;
+}
+
+.row .carousel:hover {
+  background-color: #0e0014;
+  box-shadow: 2px 2px 15px #d400ff;
 }
 
 .row .carousel .carousel-item {
   position: relative;
-  background-color: #3b0058;
 }
 
 .row .carousel H2 {
@@ -416,20 +438,20 @@ footer .bi-check-square:hover {
   font-size: 1.5rem;
 }
 
-#mail {
+/* #mail {
   text-decoration: none;
 }
 
 #mail:hover {
   text-decoration: underline;
-}
+} */
 
-#contacto {
+#repositorio {
   color: black;
   font-size: 1.8rem;
 }
 
-#contacto i {
+#repositorio i {
   font-size: 2rem;
   color: black;
 }
@@ -444,8 +466,14 @@ footer .bi-check-square:hover {
   color: white;
 }
 
+#grupo p{
+  color: black;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  margin: 0;
+}
 
-#integrantes {
+/* #integrantes {
   text-decoration: none;
   color: black;
   font-size: 1.7rem;
@@ -455,6 +483,31 @@ footer .bi-check-square:hover {
 
 #integrantes:hover {
   color: white;
+} */
+
+/* scroll bar  */
+
+/* Estilo general para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra vertical */
+  height: 12px; /* Altura de la barra horizontal */
+}
+
+/* Estilo para la pista de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background: #09000d; /* Color de fondo de la pista */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para el pulgar de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background: #8d00ce; /* Color del pulgar */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para el pulgar cuando se está en hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7d00b8; /* Color del pulgar en hover */
 }
 
 
