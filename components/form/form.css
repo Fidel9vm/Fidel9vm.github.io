@@ -1,10 +1,6 @@
-
 .row .col {
     max-width: 550px;
     margin: 0 auto;
-    background-color: #130011;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px #b800b8;
     padding: 2rem;
   }
   form div {

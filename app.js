@@ -36,4 +36,3 @@ function generarFrase() {
   // Mostrar la frase en una alerta
   alert(frases[indice]);
 }
-

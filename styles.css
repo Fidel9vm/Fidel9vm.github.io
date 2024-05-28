@@ -57,7 +57,7 @@ h3:hover {
 
 /* Barra de navegacion */
 
-h1.flexbox {
+strong.flexbox {
   text-align: center;
   font-size: 50px;
   font-weight: bolder;
@@ -116,6 +116,7 @@ nav .nav-link {
 
 nav .nav-link:hover {
   color: #3b0058;
+  transform: scale(1.09);
 }
 
 /* Hero */
@@ -185,8 +186,10 @@ nav .nav-link:hover {
 #nutricion,
 #faq,
 #iframe,
+#api-wger,
 #extras,
-#canciones {
+#canciones,
+#ingresar {
   background-color: #09000d;
   color: white;
   box-shadow: 2px 2px 10px #b800b8;
@@ -202,8 +205,10 @@ nav .nav-link:hover {
 #faq:hover,
 #grupo30:hover,
 #iframe:hover,
+#api-wger:hover,
 #extras:hover,
-#canciones:hover{
+#canciones:hover,
+#ingresar:hover{
   background-color: #0e0014;
   box-shadow: 2px 2px 15px #b800b8;
 }
@@ -372,6 +377,16 @@ nav .nav-link:hover {
   border: 3px solid #3b0058;
 }
 
+/* Api-Wger */
+
+#api-wger {
+  color: white;
+}
+
+#api-wger ul li{
+  color: white;
+}
+
 /* Extras */
 
 #extras .botonera {
@@ -402,6 +417,10 @@ footer {
 footer p {
   margin: 0px;
   margin-bottom: 3px;
+}
+
+footer strong {
+  font-size: 2rem;
 }
 /* 
 
