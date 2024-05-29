@@ -7,6 +7,18 @@
   color: white;
   box-shadow: 2px 2px 10px #b800b8;
   border-radius: 10px;
+  user-select: none;
+}
+
+.table {
+  background-color: #09000d;
+  color: white;
+}
+
+.table thead th, 
+.table tbody td {
+  background-color: #09000d; 
+  color: white; 
 }
 
 /* Estilos para los íconos de lápiz */
@@ -24,11 +36,11 @@ i.bi.bi-pencil-square:hover {
 }
 
 .contenido table {
-  border: 1px solid rgb(202, 199, 199);
+  border: 1px solid #1b0027;
 }
 
 .table > :not(caption) > * > * {
-  padding: 5px;
+  padding: 7px;
 }
 
 /* Encabezado */
@@ -56,12 +68,13 @@ i.bi.bi-pencil-square:hover {
   margin: auto;
 }
 
-.crear-rutina .btn {
+.crear-rutina .mb-3 {
   margin: 1rem;
 }
 
 .contenido .table button.eliminar-fila {
   background-color: #650094;
+  margin: 0;
   i {
     color: white;
   }
