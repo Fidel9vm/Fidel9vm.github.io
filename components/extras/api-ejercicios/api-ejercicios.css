@@ -1,5 +1,6 @@
 h1 {
     margin: 0 auto;
+    margin-top: 1rem;
     color:white;
     font-size: 3rem;
     font-weight: bolder;
@@ -68,7 +69,7 @@ h1 {
     padding: 10px 23px;
     border: 1px solid #de38ff;
     width: 80%;
-    max-width: 700px; /* Ancho máximo del modal */
+    max-width: 650px; /* Ancho máximo del modal */
   }
 
   .modal p {
@@ -116,4 +117,19 @@ h1 {
     font-size: 1.6rem;
 }
 
+@media screen and (max-width: 1000px){
+  .modal p.mensaje {
+    color: black;
+    font-size: 1rem;
+  }
+  .modal-content {
+    margin: 25% auto 0;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .modal-header strong {
+    font-size: 1.3rem;
+}
+}
   
