@@ -1,5 +1,5 @@
 .row .col {
-    max-width: 550px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 2rem;
   }
@@ -41,7 +41,7 @@ label {
 
 form div{
     text-align: start;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding-bottom: 10px;
 }
 
