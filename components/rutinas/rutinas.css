@@ -178,10 +178,6 @@ td:nth-child(6) {
   border-color: black;
 }
 
-/* ventana de emergencia */
-
-
-
 /* Estilos para dispositivos con un ancho máximo de 600px */
 @media screen and (max-width: 600px) {
   .section-row {

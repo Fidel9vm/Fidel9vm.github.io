@@ -44,14 +44,3 @@ function editarTitulo(id) {
     span.appendChild(nuevoSpan);
   });
 }
-
-function checkOrientation() {
-  if (window.innerHeight > window.innerWidth) {
-    document.getElementById("emergency-window").classList.remove("hidden");
-  } else {
-    document.getElementById("emergency-window").classList.add("hidden");
-  }
-}
-
-window.addEventListener("resize", checkOrientation);
-window.addEventListener("load", checkOrientation);
