@@ -176,7 +176,7 @@ td:nth-child(6) {
   color: black;
   background-color: white;
   border-color: black;
-}
+} 
 
 /* Estilos para dispositivos con un ancho máximo de 600px */
 @media screen and (max-width: 600px) {
