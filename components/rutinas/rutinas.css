@@ -178,11 +178,9 @@ td:nth-child(6) {
   border-color: black;
 }
 
-@media screen and (max-width: 700px) {
-  #botones-rutinas a.btn{
-    margin: 1rem;
-  }
-}
+/* ventana de emergencia */
+
+
 
 /* Estilos para dispositivos con un ancho máximo de 600px */
 @media screen and (max-width: 600px) {

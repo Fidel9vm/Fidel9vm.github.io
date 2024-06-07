@@ -269,10 +269,10 @@ nav .nav-link:hover {
 #faq form {
   margin: 25px auto;
   width: 90%;
-  background-color: #3b0058;
   padding: 20px;
-  border: 1px solid black;
   border-radius: 40px;
+  background-color: #0e0014;
+  box-shadow: 2px 2px 20px #3b0058;
 }
 
 #faq legend {
@@ -287,7 +287,7 @@ nav .nav-link:hover {
 }
 
 #enviar-btn:hover {
-  color: #b800b8;
+  color: #09000d;
   background-color: white;
 }
 
@@ -403,7 +403,7 @@ nav .nav-link:hover {
 }
 
 #extras a.btn {
-  background-color: #09000d;
+  background-color: #0e0014;
   font-size: 2.8rem;
   box-shadow: 2px 2px 20px #3b0058;
   margin: 1.5rem 0;
